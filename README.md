@@ -62,35 +62,43 @@ outdoor recreational activity.
 <img src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm-results-1-to-4.png" width="75%"  />
 
 
-#### Detailed results
+#### Algorithm 1, 10 to 90 MAVs.
+![figure6](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm1-n10-90.png)
 
-![figure6b](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm1-n10-90.png)
-#### Numeric results, Algorithm 1, using $n$ from 10 to 90 MAVs.
-
-![figure7](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm1-n10-90.png)
-
+#### Algorithm 2, 10 to 90 MAVs, with 3 place recognition indicators.
 ![figure8](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm2-m=3.png)
 
+#### Algorithm 2, 10 to 90 MAVs, with 5 place recognition indicators.
 ![figure9](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm2-m=5.png)
 
+#### Algorithm 2, 10 to 90 MAVs, with 7 place recognition indicators.
 ![figure10](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm2-m=7.png)
 
+#### Algorithm 2, 10 to 90 MAVs, with 10 place recognition indicators.
 ![figure11](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm2-m=10.png)
 
+#### Algorithm 3, 10 to 90 MAVs, with 3 place recognition indicators.
 ![figure12](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm3-m=3.png)
 
+#### Algorithm 3, 10 to 90 MAVs, with 5 place recognition indicators.
 ![figure13](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm3-m=5.png)
 
+#### Algorithm 3, 10 to 90 MAVs, with 7 place recognition indicators.
 ![figure14](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm3-m=7.png)
 
+#### Algorithm 3, 10 to 90 MAVs, with 10 place recognition indicators.
 ![figure15](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm3-m=10.png)
 
+#### Algorithm 4, 10 to 90 MAVs, with 3 place recognition indicators.
 ![figure16](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=3.png)
 
+#### Algorithm 4, 10 to 90 MAVs, with 4 place recognition indicators.
 ![figure17](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=5.png)
 
+#### Algorithm 4, 10 to 90 MAVs, with 7 place recognition indicators.
 ![figure18](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=7.png)
 
+#### Algorithm 4, 10 to 90 MAVs, with 10 place recognition indicators.
 ![figure19](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=10.png)
 
 
