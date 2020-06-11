@@ -103,7 +103,7 @@ outdoor recreational activity.
 
 ## Simulation Results [ongoing work]
 
-The numeric simulations depicted in previous figure are extended in
+The numeric simulations depicted in previous figures are extended in
 this section. We have implemented our decisional framework and
 algorithms in a Java simulation, to conduct Montecarlo simulations. We
 show below some ongoing results in which all four algorithm assume an
