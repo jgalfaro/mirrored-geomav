@@ -20,7 +20,7 @@ class Sim {
     static int[] currentX = new int[] {2,230,400,490,739,920,1041,2,230,400,490,739,920,1041,2,230,400,490,739,920}; //only if GUI enabled
     static int[] currentY = new int[] {94,255,206,262,243,369,187,94,255,206,262,243,369,187,94,255,206,262,243,369}; //only if GUI enabled
     static double[][] algoErrorProb = new double[][] { //comes from the matlab simulations, Dim1= n, Dim2= values in Algo1.png & n
-        //values directly from simulations/figures-7-10/matlab/algo1.m, log2java function
+        //values generated directly from ../matlab/algo[1,2,3,4].m, using log2java function to report algoErrorProb, based on n and m
         {0.000000,0.000003,0.000147,0.001383,0.006369,0.019728,0.047349,0.094934,0.166239,0.261563,0.376953},//n=10
         {0.000000,0.000000,0.000001,0.000039,0.000563,0.003942,0.017145,0.053167,0.127521,0.249289,0.411901}, //n=20
         {0.000000,0.000000,0.000000,0.000001,0.000052,0.000819,0.006370,0.030084,0.097057,0.230909,0.427768}, //n=30
@@ -34,6 +34,7 @@ class Sim {
 
     //static int[] algorithm = new int[] {1,2,3,4}; // 4 TODO, add below a third dimension, based on the algorith
     //static int[] m = new int[] {3,5,7,10}; // TODO, add below a fourth dimension, based on the values of m
+    //TODO: additional dimensions of the algoErrorProb, based on additional parameters
 
     static int successCounter=0;
 

@@ -58,8 +58,8 @@ public class Montecarlo{
                 }//try_robot
             }//for
 
-        System.out.print("\n SuccessCounter="+Sim.successCounter+"\n");
-        System.exit(0);
+         System.out.print("\n SuccessCounter="+Sim.successCounter+"\n");
+         System.exit(0);//in case robot is enabled
         }//if
 
     }//main
@@ -228,24 +228,19 @@ class GraphicMover extends MouseInputAdapter{
 
         //Mission Success
         chosenErrorProb=Sim.algoErrorProb[ncase][rand.nextInt(numValues)];
-        if(Math.random() < chosenErrorProb){
+        if(Math.random() > chosenErrorProb){
             success=1;
             Sim.successCounter+=1;
-            System.out.print("["+round+","+step+","+"Algorithm="+Sim.algorithm+",MAVs="+numMAVs+",success="+success+"]\n");
+            //System.out.print("["+round+","+step+","+"Algorithm="+Sim.algorithm+",MAVs="+numMAVs+",success="+success+"]\n");
         }else{
-            if(Sim.verbose){
-                System.out.print("["+round+","+step+","+"Algorithm="+Sim.algorithm+",MAVs="+numMAVs+",success="+success+"]\n");
-            }
+            //if(Sim.verbose){
+                //System.out.print("["+round+","+step+","+"Algorithm="+Sim.algorithm+",MAVs="+numMAVs+",success="+success+"]\n");
+            //}
         }
 
 
         //System.out.print("["+round+","+step+","+"MAVs="+numMAVs+",values="+numValues+",chosen="+chosen+"]\n");
-
         //System.out.print("["+round+","+step+","+"Algo=1, MAVs="+numMAVs+",success="+success+"]\n");
-
-        //50%+1 majority?
-        //         if(
-        //         +"]\n");
 
         imagePanel.repaint();
 
