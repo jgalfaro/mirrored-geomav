@@ -47,6 +47,14 @@ outdoor recreational activity.
 
 ## Extended Algorithms
 
+https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo1.png
+
+https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo2.png
+
+https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo3.png
+
+https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo4.png
+
 
 ## References
 
