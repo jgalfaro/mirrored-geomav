@@ -57,9 +57,12 @@ outdoor recreational activity.
 
 ## Numeric Results
 
-<img src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm-results-1-to-4.png" width="65%"  />
-
 #### Summary
+
+<img src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm-results-1-to-4.png" width="75%"  />
+
+
+#### Detailed results
 
 ![figure6b](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm1-n10-90.png)
 #### Numeric results, Algorithm 1, using $n$ from 10 to 90 MAVs.
