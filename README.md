@@ -1,5 +1,5 @@
-Geocaching-inspired Navigation for Micro Aerial
-Vehicles with Fallible Place Recognition
+Supplementary Material for Geocaching-inspired Navigation
+for Micro Aerial Vehicles with Fallible Place Recognition
 ===
 
 ### Michel Barbeau, Carleton University, School of Computer Science, Canada.
@@ -41,6 +41,9 @@ Micro Aerial Vehicles (MAVs) introduced in Ref. [1]. The algorithm is
 one of its kind in that it adopts an information sharing and
 collaborative model. It also finds inspiration in the geocaching
 outdoor recreational activity.
+
+![figure1](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/AlgoRef1.png)
+#### Figure 1. Incremental path construction algorithm illustrated. Pictures (a), (b), and (c) constitute steps required to determine the next waypoint, while picture (d) depicts a resulting path.
 
 ## Extended Algorithms
 
