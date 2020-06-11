@@ -107,7 +107,8 @@ outdoor recreational activity.
 
 #### Code
 
-(https://github.com/jgalfaro/mirrored-geomav/blob/master/code)
+![figureGUI](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/GUI.gif)
+![code](cf. https://github.com/jgalfaro/mirrored-geomav/blob/master/code/java)
 
 
 
