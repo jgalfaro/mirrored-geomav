@@ -103,6 +103,17 @@ outdoor recreational activity.
 
 ## Simulation Results [ongoing work]
 
+The numeric simulations depicted in previous figure are extended in
+this section. We have implemented our decisional framework and
+algorithms in a Java simulation, to conduct Montecarlo simulations. We
+show below some ongoing results in which all four algorithm assume an
+incremental number of MAVs (from 10 to 90 MAVs), randomized failure
+ratios reported in the literature of navigation systems, visual
+recognition, environmental sound and thermal infrared imaging, etc.
+The simulation aims at evaluating the chances of mission success of
+the swarm. Mission success means that the swarm succeeds at visiting
+all the way points of the path and reaches the final destination.
+
 #### Simulation Gui
 
 ![figureGUI](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/GUI.gif)
