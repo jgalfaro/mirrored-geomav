@@ -103,11 +103,15 @@ outdoor recreational activity.
 
 ## Simulation Results [ongoing work]
 
-#### Gui
-
-#### Code
+#### Simulation Gui
 
 ![figureGUI](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/GUI.gif)
+
+#### Early results
+
+![figureMontecarlo](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Montecarlo-results.png)
+
+#### Code
 
 #### cf. (https://github.com/jgalfaro/mirrored-geomav/blob/master/code/java)
 
