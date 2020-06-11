@@ -57,8 +57,11 @@ outdoor recreational activity.
 
 ## Numeric Results
 
-![figure6](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm1-n10-90.png)
-#### Figure 2. Incremental path construction algorithm illustrated. Pictures (a), (b), and (c) constitute steps required to determine the next waypoint, while picture (d) depicts a resulting path.
+![figure6b](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm-results-1-to-4)
+#### Numeric results, Algorithm 1 to 4.
+
+![figure6b](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm1-n10-90.png)
+#### Numeric results, Algorithm 1, using $n$ from 10 to 90 MAVs.
 
 ![figure7](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm1-n10-90.png)
 
