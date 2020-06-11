@@ -122,8 +122,6 @@ all the way points of the path and reaches the final destination.
 
 ![figureMontecarlo](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Montecarlo-results.png)
 
-#### Code
-
 #### cf. (https://github.com/jgalfaro/mirrored-geomav/blob/master/code/java)
 
 
