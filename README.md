@@ -4,7 +4,7 @@ for Micro Aerial Vehicles with Fallible Place Recognition
 
 ### Michel Barbeau, Carleton University, School of Computer Science, Canada.
 
-### Joaquin Garcia-Alfaro, Institut Polytechnique de Paris, France.
+### Joaquin Garcia-Alfaro, Institut Polytechnique de Paris, Telecom SudParis, France.
 
 ### Evangelos Kranakis, Carleton University, School of Computer Science, Canada.
 
@@ -47,13 +47,43 @@ outdoor recreational activity.
 
 ## Extended Algorithms
 
-https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo1.png
+![figure2](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo1.png)
 
-https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo2.png
+![figure3](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo2.png)
 
-https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo3.png
+![figure4](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo3.png)
 
-https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo4.png
+![figure5](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo4.png)
+
+## Numeric Results
+
+![figure6](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm1-n10-90.png)
+
+![figure7](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm1-n10-90.png)
+
+![figure8](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm2-m=3.png)
+
+![figure9](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm2-m=5.png)
+
+![figure10](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm2-m=7.png)
+
+![figure11](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm2-m=10.png)
+
+![figure12](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm3-m=3.png)
+
+![figure13](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm3-m=5.png)
+
+![figure14](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm3-m=7.png)
+
+![figure15](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm3-m=10.png)
+
+![figure16](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=3.png)
+
+![figure17](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=5.png)
+
+![figure18](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=7.png)
+
+![figure19](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=10.png)
 
 
 ## References
