@@ -1,8 +1,3 @@
-// Simulations from paper:
-// "Geocaching-inspired Navigation for Micro Aerial Vehicles with Fallible
-// Place Recognition"
-// authored by: Michel Barbeau, Joaquin Garcia-Alfaro and Evangelos Kranakis
-// Version: June 11, 2020
 import java.awt.BasicStroke;
 import java.awt.Stroke;
 import java.awt.*;
@@ -40,28 +35,38 @@ public class Montecarlo{
         System.out.format("\n");
 
         if(useRobot){
-            for(int i=0;i < 100;i++){
-                try {
-                    Robot robot = new Robot();
+            for(int a=1;a<5;a++){
+                Sim.algorithm=a;
+                System.out.print("Algorithm="+Sim.algorithm+"\n");
+                for(int n=0;n<9;n++){
+                    Sim.ncase=n;
+                    System.out.print("n"+Sim.numberMAV[Sim.ncase]+"={");
+                    for(int i=0;i < 10;i++){
+                        Sim.successCounter=0;
+                        for(int j=0;j < 100;j++){
+                            try {
+                                Robot robot = new Robot();
 
-                    robot.keyPress(KeyEvent.VK_N);
-                    robot.keyRelease(KeyEvent.VK_N);
-                    try{
-                        //Pause for 0.1 seconds
-                        Thread.sleep(10);
-                    }catch (Exception e) {
-                    e.printStackTrace();
-                    }//try_pause
+                                robot.keyPress(KeyEvent.VK_N);
+                                robot.keyRelease(KeyEvent.VK_N);
+                                try{
+                                    //Pause for 0.1 seconds
+                                    Thread.sleep(10);
+                                }catch (Exception e) {
+                                    e.printStackTrace();
+                                }//try_pause
 
-                } catch (AWTException e) {
-                    e.printStackTrace();
-                }//try_robot
-            }//for
-
-         System.out.print("\n SuccessCounter="+Sim.successCounter+"\n");
-         System.exit(0);//in case robot is enabled
+                            } catch (AWTException e) {
+                                e.printStackTrace();
+                            }//try_robot
+                        }//for_j
+                        System.out.print(Sim.successCounter+",");
+                    }//for_i
+                    System.out.print(Sim.successCounter+"}\n");
+                }//for_n
+            }//for_a
+            System.exit(0);
         }//if
-
     }//main
 
 }//Montecarlo class
@@ -79,7 +84,7 @@ class GraphicImagePanel extends JPanel implements KeyListener{
         //System.out.println("\n KeyPressed");
         int k = e.getKeyCode();
         int pointer = 0;
-        int ncase=0;//0 to 8, i.e., 10 to 90 MAVs
+        int ncase=Sim.ncase;//0 to 8, i.e., 10 to 90 MAVs
 
         switch (k) {
             case KeyEvent.VK_N://Move to Next Waypoint
@@ -90,7 +95,7 @@ class GraphicImagePanel extends JPanel implements KeyListener{
                     Sim.step=0;
                 }
                 pointer=Sim.step;
-                mover.moveNextWayPoint(Sim.round,pointer,Sim.currentX[pointer],Sim.currentY[pointer],Sim.numberMAV[ncase],ncase);
+                mover.moveNextWayPoint(Sim.round,pointer,Sim.currentX[pointer],Sim.currentY[pointer],Sim.numberMAV[ncase],ncase);//move
                 break;
             case KeyEvent.VK_O:
                 //System.out.println("\n KeyPressed==O");
@@ -141,7 +146,7 @@ class GraphicImagePanel extends JPanel implements KeyListener{
 
     protected void paintComponent(Graphics g)
     {
-        Color DarkGreen = new Color(0, 153, 250); 
+        Color DarkGreen = new Color(0, 153, 250); // http://teaching.csse.uwa.edu.au/units/CITS1001/colorinfo.html
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D)g;
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
@@ -215,32 +220,49 @@ class GraphicMover extends MouseInputAdapter{
     {
         Random rand = new Random();
         double chosenErrorProb=0;
+        int algorithm=Sim.algorithm;
 
 
         //SIMULATION
         imagePanel.SWARM.x = NewX;
         imagePanel.SWARM.y = NewY;
 
+
         //System.out.print("["+step+",X="+imagePanel.SWARM.x+",Y="+imagePanel.SWARM.y+",MAVs="+numMAVs+"]\n");
 
         int success=0;
-        int numValues=Sim.algoErrorProb[ncase].length;//algoErrorValues from matlab simulations
+        int numValues=Sim.algoErrorProb[algorithm-1][ncase].length;//algoErrorValues from matlab simulations
 
-        //Mission Success
-        chosenErrorProb=Sim.algoErrorProb[ncase][rand.nextInt(numValues)];
+        //Compute success
+        //System.out.print("Algorithm="+algorithm+", ncase="+ncase+", numValues="+numValues+", algoErrorProb:\n");
+        //for(int i=0;i<Sim.algoErrorProb[algorithm-1][ncase].length;i++){
+        //    chosenErrorProb=Sim.algoErrorProb[algorithm-1][ncase][rand.nextInt(numValues)];
+        //    System.out.print("i="+i+" "+Sim.algoErrorProb[algorithm-1][ncase][i]+", chosen="+chosenErrorProb+"\n");
+        //}
+        chosenErrorProb=Sim.algoErrorProb[algorithm-1][ncase][rand.nextInt(numValues)];
         if(Math.random() > chosenErrorProb){
             success=1;
             Sim.successCounter+=1;
-            //System.out.print("["+round+","+step+","+"Algorithm="+Sim.algorithm+",MAVs="+numMAVs+",success="+success+"]\n");
+            //System.out.print("["+round+","+step+","+"Algorithm="+algorithm+",MAVs="+numMAVs+",success="+success+"]\n");
+            if(Sim.verbose){
+                System.out.print("success="+success+"\n");
+            }
         }else{
-            //if(Sim.verbose){
-                //System.out.print("["+round+","+step+","+"Algorithm="+Sim.algorithm+",MAVs="+numMAVs+",success="+success+"]\n");
-            //}
+            if(Sim.verbose){
+                success=0;
+                System.out.print("success="+success+"\n");
+                //system.out.print("["+round+","+step+","+"Algorithm="+algorithm+",MAVs="+numMAVs+",success="+success+"]\n");
+            }
         }
 
 
         //System.out.print("["+round+","+step+","+"MAVs="+numMAVs+",values="+numValues+",chosen="+chosen+"]\n");
+
         //System.out.print("["+round+","+step+","+"Algo=1, MAVs="+numMAVs+",success="+success+"]\n");
+
+        //50%+1 majority?
+        //         if(
+        //         +"]\n");
 
         imagePanel.repaint();
 
