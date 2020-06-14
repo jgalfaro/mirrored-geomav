@@ -118,6 +118,8 @@ all the way points of the path and reaches the final destination.
 
 ![figureGUI](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/GUI.gif)
 
+![figureGUI-console](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/GUI-console.gif)
+
 #### Early Results
 
 ![figureMontecarlo](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Montecarlo-results.png)
