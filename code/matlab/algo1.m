@@ -4,29 +4,29 @@
 % authored by: Michel Barbeau, Joaquin Garcia-Alfaro and Evangelos Kranakis
 % Version: June 10, 2020
 % 
-% 
-
-%log2java(80,0.5)
 
 
-subplot(3,3,1)
-ploterror(10,0.5)
-subplot(3,3,2)
-ploterror(20,0.5)
-subplot(3,3,3)
-ploterror(30,0.5)
-subplot(3,3,4)
-ploterror(40,0.5)
-subplot(3,3,5)
-ploterror(50,0.5)
-subplot(3,3,6)
-ploterror(60,0.5)
-subplot(3,3,7)
-ploterror(70,0.5)
-subplot(3,3,8)
-ploterror(80,0.5)
-subplot(3,3,9)
-ploterror(90,0.5)
+log2java(90,0.5)
+
+
+% subplot(3,3,1)
+% ploterror(10,0.5)
+% subplot(3,3,2)
+% ploterror(20,0.5)
+% subplot(3,3,3)
+% ploterror(30,0.5)
+% subplot(3,3,4)
+% ploterror(40,0.5)
+% subplot(3,3,5)
+% ploterror(50,0.5)
+% subplot(3,3,6)
+% ploterror(60,0.5)
+% subplot(3,3,7)
+% ploterror(70,0.5)
+% subplot(3,3,8)
+% ploterror(80,0.5)
+% subplot(3,3,9)
+% ploterror(90,0.5)
 
 function [] = ploterror(n,q)
     % n = number of MAVs
@@ -70,7 +70,5 @@ function [] = log2java(n,q)
     end
     fprintf('Algorithm 1, n=%d\n',n);
     cprint(pn);
-    %printf(str1);
-    %printf(str2);
 end
 
