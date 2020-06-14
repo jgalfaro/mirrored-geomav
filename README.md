@@ -92,7 +92,7 @@ outdoor recreational activity.
 #### Algorithm 4, 10 to 90 MAVs, with 3 place recognition indicators.
 ![figure16](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=3.png)
 
-#### Algorithm 4, 10 to 90 MAVs, with 4 place recognition indicators.
+#### Algorithm 4, 10 to 90 MAVs, with 5 place recognition indicators.
 ![figure17](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=5.png)
 
 #### Algorithm 4, 10 to 90 MAVs, with 7 place recognition indicators.
@@ -101,7 +101,7 @@ outdoor recreational activity.
 #### Algorithm 4, 10 to 90 MAVs, with 10 place recognition indicators.
 ![figure19](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=10.png)
 
-## Simulation Results [ongoing work]
+## Montecarlo Simulation Results 
 
 The numeric simulations depicted in previous figures are extended in
 this section. We have implemented our decisional framework and
