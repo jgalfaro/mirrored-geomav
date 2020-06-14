@@ -101,18 +101,11 @@ outdoor recreational activity.
 #### Algorithm 4, 10 to 90 MAVs, with 10 place recognition indicators.
 ![figure19](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=10.png)
 
-## Montecarlo Simulation Results 
+## Montecarlo Simulation Results
 
 The numeric simulations depicted in previous figures are extended in
 this section. We have implemented our decisional framework and
-algorithms in a Java simulation, to conduct Montecarlo simulations. We
-show below some ongoing results in which all four algorithm assume an
-incremental number of MAVs (from 10 to 90 MAVs), randomized failure
-ratios reported in the literature of navigation systems, visual
-recognition, environmental sound and thermal infrared imaging, etc.
-The simulation aims at evaluating the chances of mission success of
-the swarm. Mission success means that the swarm succeeds at visiting
-all the way points of the path and reaches the final destination.
+algorithms in a Java simulation, to conduct Montecarlo simulations.
 
 #### Montecarlo Simulation GUI
 
@@ -122,13 +115,21 @@ all the way points of the path and reaches the final destination.
 
 ![figureGUI-console2](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/GUI-console2.gif)
 
-#### Early Results
+#### Results
 
 ![figureMontecarlo](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Montecarlo-results.png)
 
-#### cf. (https://github.com/jgalfaro/mirrored-geomav/blob/master/code/java)
+In the above figure, the x-axis represents the number of members in a
+swarm. We show simulation results in which all four algorithm assume
+an incremental number of MAVs (from 10 to 90 MAVs), randomized failure
+ratios reported in the literature of navigation systems, visual
+recognition, environmental sound and thermal infrared imaging, etc.
+The simulation aims at evaluating the chances of mission success of a
+swarm. Each simulation consists of 1000 iterations per x-axis value.
+The y-axis represents the success rate, i.e., number of successful
+iterations per x-axis value.
 
-
+#### cf. (https://github.com/jgalfaro/mirrored-geomav/blob/master/code/java) for further details.
 
 ## References
 
@@ -138,4 +139,4 @@ Communications (IEEE INFOCOM 2019) Workshops, April 2019, pp. 620-625.
 [Online]. Available at https://doi.org/10.1109/INFCOMW.2019.8845318
 
 [2] M. Barbeau, J. Garcia-Alfaro, E. Kranakis, F. Santos, Quality Amplification of Error Prone Navigation for Swarms of Micro Aerial Vehicles, in IEEE GLOBECOM 2019 Workshop on Computing-Centric Drone Networks 2019 (CCDN 2019), December 2019, pp. 1-6
-[Online]. Available at https://doi.org/10.1109/GCWkshps45667.2019.9024394 & http://arxiv.org/abs/1906.09505 
+[Online]. Available at https://doi.org/10.1109/GCWkshps45667.2019.9024394 & http://arxiv.org/abs/1906.09505
