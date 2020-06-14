@@ -37,7 +37,7 @@ Planning; Navigation; Place Recognition.
 ## Incremental Path Construction Algorithm
 
 Figure 1 depicts the idea of the navigation algorithm for swarm of
-Micro Aerial Vehicles (MAVs) introduced in Ref. [1]. The algorithm is
+Micro Aerial Vehicles (MAVs) introduced in Refs. [1,2]. The algorithm is
 one of its kind in that it adopts an information sharing and
 collaborative model. It also finds inspiration in the geocaching
 outdoor recreational activity.
