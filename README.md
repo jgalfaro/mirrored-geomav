@@ -114,11 +114,13 @@ The simulation aims at evaluating the chances of mission success of
 the swarm. Mission success means that the swarm succeeds at visiting
 all the way points of the path and reaches the final destination.
 
-#### Montecarlo Simulation 
+#### Montecarlo Simulation GUI
 
 ![figureGUI](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/GUI.gif)
 
 ![figureGUI-console](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/GUI-console.gif)
+
+![figureGUI-console2](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/GUI-console2.gif)
 
 #### Early Results
 
