@@ -136,5 +136,4 @@ Communications (IEEE INFOCOM 2019) Workshops, April 2019, pp. 620-625.
 [Online]. Available at https://doi.org/10.1109/INFCOMW.2019.8845318
 
 [2] M. Barbeau, J. Garcia-Alfaro, E. Kranakis, F. Santos, Quality Amplification of Error Prone Navigation for Swarms of Micro Aerial Vehicles, in IEEE GLOBECOM 2019 Workshop on Computing-Centric Drone Networks 2019 (CCDN 2019), December 2019, pp. 1-6
-[Online]. Available at https://doi.org/10.1109/GCWkshps45667.2019.9024394
-[Extended Results] at http://arxiv.org/abs/1906.09505 
+[Online]. Available at https://doi.org/10.1109/GCWkshps45667.2019.9024394 & http://arxiv.org/abs/1906.09505 
