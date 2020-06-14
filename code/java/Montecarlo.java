@@ -35,23 +35,23 @@ public class Montecarlo{
         System.out.format("\n");
 
         if(useRobot){
-            for(int a=1;a<5;a++){
+            for(int a=2;a<5;a++){
                 Sim.algorithm=a;
                 System.out.print("Algorithm="+Sim.algorithm+"\n");
                 for(int n=0;n<9;n++){
                     Sim.ncase=n;
                     System.out.print("n"+Sim.numberMAV[Sim.ncase]+"={");
-                    for(int i=0;i < 10;i++){
+                    for(int i=0;i < 100;i++){
                         Sim.successCounter=0;
-                        for(int j=0;j < 100;j++){
+                        for(int j=0;j < 1000;j++){
                             try {
                                 Robot robot = new Robot();
 
                                 robot.keyPress(KeyEvent.VK_N);
                                 robot.keyRelease(KeyEvent.VK_N);
                                 try{
-                                    //Pause for 0.1 seconds
-                                    Thread.sleep(10);
+                                    //Pause for 0.01 seconds
+                                    Thread.sleep(1);
                                 }catch (Exception e) {
                                     e.printStackTrace();
                                 }//try_pause
@@ -60,9 +60,9 @@ public class Montecarlo{
                                 e.printStackTrace();
                             }//try_robot
                         }//for_j
-                        System.out.print(Sim.successCounter+",");
+                        System.out.print((Sim.successCounter/10.0)+",");
                     }//for_i
-                    System.out.print(Sim.successCounter+"}\n");
+                    System.out.print("}\n");
                 }//for_n
             }//for_a
             System.exit(0);
