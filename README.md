@@ -101,13 +101,13 @@ outdoor recreational activity.
 #### Algorithm 4, 10 to 90 MAVs, with 10 place recognition indicators.
 ![figure19](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm4-m=10.png)
 
-## Montecarlo Simulation Results
+## Monte Carlo Simulation Results
 
 The numeric simulations depicted in previous figures are extended in
 this section. We have implemented our decisional framework and
-algorithms in a Java simulation, to conduct Montecarlo simulations.
+algorithms in a Java simulation, to conduct Monte Carlo simulations.
 
-#### Montecarlo Simulation GUI
+#### Monte Carlo Simulation GUI
 
 ![figureGUI](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/GUI.gif)
 
