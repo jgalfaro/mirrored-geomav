@@ -236,7 +236,7 @@ algorithms in a Java simulation, to conduct Monte Carlo simulations.
 
 #### Results
 
-![figureMontecarlo](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Montecarlo-results.png)
+<img src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Montecarlo-results.png" width="125%"  />
 
 In the above figure, the x-axis represents the number of members in a
 swarm. We show simulation results in which all four algorithm assume
