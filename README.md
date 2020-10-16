@@ -103,10 +103,13 @@ denote the error probability of Algorithm 1, for *n* MAVs all using a
 single common indicator *i* in *I*. It is given by the following
 formula:
 
-<img
-src="https://render.githubusercontent.com/render/math?math=p_n (i) &= 1 -
-\sum_{l= \lceil n/2 \rceil }^{n} {n \choose l} \left[1-p(i)\right]^l p(i)^{n-l}">
+![perror-algo1](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/perror-algo1)
 
+where <img
+src="https://render.githubusercontent.com/render/math?math=p(i)"> is
+the probability that a reply to a query is correct and <img
+src="https://render.githubusercontent.com/render/math?math=1-p(i)">
+that it is wrong, for the indicator $i$, for all MAVs $u \in N$.
 
 
 Figure 5 shows a numeric evaluation of Algorithms 1 and 2, conducted
