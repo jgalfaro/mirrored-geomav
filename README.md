@@ -62,7 +62,7 @@ disagreement between among swarm members.
 
 ### Queries and Indicators
 
-Let <img height="50" width="500" src="https://render.githubusercontent.com/render/math?math=N=\{1,2,...,n\}"> denote the set of MAVs navigating a terrain. Let $I = {1, 2, . .
+Let <img height="50%" src="https://render.githubusercontent.com/render/math?math=N=\{1,2,...,n\}"> denote the set of MAVs navigating a terrain. Let $I = {1, 2, . .
 ., m}$ be a set of indicators. Every indicator $i$ in $I$ may
 correspond to a different place recognition method (e.g., visual and
 sound clues, observational data, place recognition methods and GPS
