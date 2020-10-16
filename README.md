@@ -97,6 +97,30 @@ the majority of the MAVs.
 ![figure4](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo2.png)
 #### Figure 4. Multiple indicator algorithm.
 
+Let <img
+src="https://render.githubusercontent.com/render/math?math=p_n(i)">
+denote the error probability of Algorithm 1, for *n* MAVs all using a
+single common indicator *i* in *I*. It is given by the following
+formula:
+
+<img
+src="https://render.githubusercontent.com/render/math?math=p_n (i) &= 1 -
+\sum_{l= \lceil n/2 \rceil }^{n} {n \choose l} \left[1-p(i)\right]^l p(i)^{n-l}">
+
+
+
+Figure 5 shows a numeric evaluation of Algorithms 1 and 2, conducted
+in Matlab, using different values of *n*. There are advantages and
+drawbacks in Algorithms 1 and 2. For instance, even if Algorithm 2
+seems to improve the results of Algorithm 1, some indicators may not
+be available for querying to all MAVs throughout the entire waypoint
+navigation process.
+
+Figure 6 presents a third startegy (Multiple Indicators Flat) that
+combines Algorithms 1 and 2, to achieve more accurate results.
+
+
+
 ![figure4](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo3.png)
 
 ![figure5](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo4.png)
