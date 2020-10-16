@@ -170,7 +170,7 @@ avaiable in the
 [code](https://github.com/jgalfaro/mirrored-geomav/tree/master/code)
 folder of this website.
 
-<img src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm-results-1-to-4.png" width="75%"  />
+<img src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm-results-1-to-4.png" width="125%"  />
 
 
 #### Algorithm 1, 10 to 90 MAVs.
