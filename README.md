@@ -173,6 +173,14 @@ folder of this website.
 <img src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm-results-1-to-4.png" width="125%"  />
 
 
+As we can appreciate with the results, Algorithm 1 is always worst
+than all the others. For low indicator error probability, Algorithms
+2, 3, and 4 have similar performance. The curves also indicate that a
+higher number of participating MAVs reduces the probability of errors.
+The same is true for the number of indicators. Some more detailed
+evaluations per algorithm are detailed next.
+
+
 #### Algorithm 1, 10 to 90 MAVs.
 ![figure6](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm1-n10-90.png)
 
