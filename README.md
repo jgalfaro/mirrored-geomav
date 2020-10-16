@@ -68,16 +68,18 @@ Let *N={1,2,...,n}* denote the set of MAVs navigating a terrain. Let
 visual and sound clues, observational data, place recognition methods
 and GPS information).
 
-![figure2](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/framework.png)
-
-#### Figure 2. Query *Q(u,i)* made by a MAV u to indicator *i*.
-
 Figure 2 depicts a simplified query system in the *(u, i)* coordinate
 system, with the u-axis representing the MAVs *u* in *N* and the
 i-axis the indicators *i* in *I*. The place recognition methods
 associated with indicators may vary and depend on sensing and
 computing capabilities of the MAVs. In the sequel, it is assumed that
 all MAVs *u* in *N* may query exactly the same set of indicators, I.
+
+
+![figure2](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/framework.png)
+
+#### Figure 2. Query *Q(u,i)* made by a MAV u to indicator *i*.
+
 
 ### Distributed Majority
 
