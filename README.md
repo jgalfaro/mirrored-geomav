@@ -72,9 +72,30 @@ and GPS information).
 
 #### Figure 2. Query *Q(u,i)* made by a MAV u to indicator *i*.
 
-![figure2](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo1.png)
+Figure 2 depicts a simplified query system in the *(u, i)* coordinate
+system, with the u-axis representing the MAVs *u* in *N* and the
+i-axis the indicators *i* in *I*. The place recognition methods
+associated with indicators may vary and depend on sensing and
+computing capabilities of the MAVs. In the sequel, it is assumed that
+all MAVs *u* in *N* may query exactly the same set of indicators, I.
 
-![figure3](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo2.png)
+### Distributed Majority
+
+Figures 3 and 4 show our two first algorithms (Single Indicator and
+Multiple Indicators Hierarchical). The first strategy corresponds to
+our previous work in Ref.[1], using a majoritarian rule to select a
+single circle focus, and using only one single indicator. The second
+strategy assumes that every single MAV in *N* uses all available
+indicators in *I*. It also applies the standard majority rule to
+select a reply, i.e., a reference point. The reference points are
+exchanged among the MAVs. The group selects the circle determined by
+the majority of the MAVs.
+
+![figure3](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo1.png)
+#### Figure 3. Single indicator algorithm.
+
+![figure4](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo2.png)
+#### Figure 4. Multiple indicator algorithm.
 
 ![figure4](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo3.png)
 
