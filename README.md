@@ -42,7 +42,7 @@ one of its kind in that it adopts an information sharing and
 collaborative model. It also finds inspiration in the geocaching
 outdoor recreational activity.
 
-![figure1](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/AlgoRef1.png)
+<img src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/AlgoRefs.png" width="75%"  />
 #### Figure 1. Incremental path construction algorithm illustrated. Pictures (a), (b), and (c) constitute steps required to determine the next waypoint, while picture (d) depicts a resulting path.
 
 ## Extended Algorithms
