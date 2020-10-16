@@ -147,8 +147,7 @@ not be available for querying to all MAVs throughout the entire
 waypoint navigation process. Hence, we may need to combine both
 strategies and add new elements (voting and threshold elements).
 
-<img src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm-results-1-to-2.png" width="75%"/>
-
+![figure3](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm-results-1-to-2.png)
 #### Figure 3. Error probabilities of Algorithms 1 and 2.
 
 ### Extended Algorithms
