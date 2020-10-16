@@ -46,7 +46,27 @@ outdoor recreational activity.
 
 #### Figure 1. Incremental path construction algorithm illustrated. Pictures (a), (b), and (c) constitute steps required to determine the next waypoint, while picture (d) depicts a resulting path.
 
-## Extended Algorithms
+## Decisional Framework and Algorithms
+
+The MAVs of a swarm co-operate to accomplish a mission that consists of following
+a path with several waypoints. The discovery of each waypoint is achieved
+using a combination of visual and sound clues, observational data, place recognition
+methods and GPS information. This means that the MAVs process queries
+about place locations. The obtained replies are exchanged among the swarm
+members. Due to place recognition errors, replies may be inconsistent. Based on
+majoritarian rule, the replies are assembled together to determine a waypoint.
+This procedure is repeated for each step until the destination is reached. The
+resulting sequence of waypoints forms a path. In the sequel, we describe details
+of the decisional framework taking into account place recognition errors and
+disagreement between among swarm members.
+
+### Queries and Indicators
+
+Let $N = {1, 2, ..., n}$ denote the set of MAVs navigating a terrain.
+Let $I = {1, 2, . . ., m}$ be a set of indicators. Every indicator $i$
+in $I$ may correspond to a different place recognition method (e.g.,
+visual and sound clues, observational data, place recognition methods
+and GPS information).
 
 ![figure2](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo1.png)
 
