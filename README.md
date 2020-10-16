@@ -109,28 +109,61 @@ where <img
 src="https://render.githubusercontent.com/render/math?math=p(i)"> is
 the probability that a reply to a query is correct and <img
 src="https://render.githubusercontent.com/render/math?math=1-p(i)">
-that it is wrong, for the indicator *i*, for all MAVs *u* in *N*.
+that it is wrong, for the indicator <img
+src="https://render.githubusercontent.com/render/math?math=i">, for all MAVs <img
+src="https://render.githubusercontent.com/render/math?math=u\inN">.
 
+Now, let <img
+src="https://render.githubusercontent.com/render/math?math=p_m">
+denote the error probability of the majority rule for a single MAV
+using all <img
+src="https://render.githubusercontent.com/render/math?math=m"> indicators,
 
-Figure 5 shows a numeric evaluation of Algorithms 1 and 2, conducted
-in Matlab, using different values of *n*. There are advantages and
-drawbacks in Algorithms 1 and 2. For instance, even if Algorithm 2
-seems to improve the results of Algorithm 1, some indicators may not
-be available for querying to all MAVs throughout the entire waypoint
-navigation process.
+<img width="50%" src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/perror-reply.png">
 
-Figure 6 presents a third startegy (Multiple Indicators Flat) that
-combines Algorithms 1 and 2, to achieve more accurate results.
+where <img
+src="https://render.githubusercontent.com/render/math?math=p"> is the
+probability that a reply to a query is correct and <img
+src="https://render.githubusercontent.com/render/math?math=1-p"> that
+it is wrong, assuming that it is the same across all place recognition
+methods. We can also derive an equation without this assumption,
+indexing the probabilities over the indicators. Each MAV makes a
+decision independently querying all available indicators. The MAVs
+exchange their decisions and follow the resulting group majority.
+Assuming independence, the error probability of Algorithm 2 is given
+by the following formula.
 
+<img width="50%" src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/perror-algo2.png">
 
+#### Comparing the error probabilities of Algorithms 1 and 2
+
+Figure 3 shows a numeric evaluation of Algorithms 1 and 2, conducted
+in Matlab, using different values of *n* and *m*. Algorithm 2 seems to
+improve the results of Algorithm 1. However, there are advantages and
+drawbacks. For instance, under real conditions, some indicators may
+not be available for querying to all MAVs throughout the entire
+waypoint navigation process. Hence, we may need to combine both
+strategies and add new elements (voting and threshold elements).
+
+<img src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm-results-1-to-2.png" width="75%"/>
+#### Figure 3. Error probabilities of Algorithms 1 and 2.
+
+### Extended Algorithms
 
 ![figure4](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo3.png)
 
 ![figure5](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo4.png)
 
-## Numeric Results
-
-#### Summary
+Algorithms 3 and 4 presents two other strategies (Multiple Indicators
+Flat and Majority with a Threshold) that combine the pros and cons of
+Algorithms 1 and 2, to achieve more accurate results. Error
+probabilities for Algorithms 3 and 4 have also been analyzed and
+reported in our work. Numeric results comparing the error
+probabilities of the four strategies are detailed next, for different
+combinations of parameters. The Matlab code of the evaluations is
+avaiable in the
+[code](https://github.com/jgalfaro/mirrored-geomav/tree/master/code)
+folder of this website.
 
 <img src="https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algorithm-results-1-to-4.png" width="75%"  />
 
