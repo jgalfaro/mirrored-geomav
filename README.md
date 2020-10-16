@@ -68,6 +68,10 @@ Let *N={1,2,...,n}* denote the set of MAVs navigating a terrain. Let
 visual and sound clues, observational data, place recognition methods
 and GPS information).
 
+![figure2](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/framework.png)
+
+#### Figure 2. Query *Q(u,i)* made by a MAV u to indicator *i*.
+
 ![figure2](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo1.png)
 
 ![figure3](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/Algo2.png)
