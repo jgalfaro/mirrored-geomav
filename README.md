@@ -103,7 +103,8 @@ denote the error probability of Algorithm 1, for *n* MAVs all using a
 single common indicator *i* in *I*. It is given by the following
 formula:
 
-<img wirdth="50%" https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/perror-algo1.png>
+<img wirdth="50%" src
+"https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/perror-algo1.png">
 
 where <img
 src="https://render.githubusercontent.com/render/math?math=p(i)"> is
