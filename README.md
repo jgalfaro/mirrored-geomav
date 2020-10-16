@@ -151,10 +151,7 @@ strategies and add new elements (voting and threshold elements).
 #### Figure 3. Error probabilities of Algorithms 1 and 2.
 
 ![figure4](https://github.com/jgalfaro/mirrored-geomav/blob/master/figures/threshold.png)
-#### Figure 4. Certain MAVs may not necessarily get replies for all
-the queries made. For instance, MAVs *u* and *w* are the ones
-for which the number of obtained replies exceeds a certain predefined
-threshold value.
+#### Figure 4. Certain MAVs may not necessarily get replies for all the queries made. For instance, MAVs *u* and *w* are the ones for which the number of obtained replies exceeds a certain predefined threshold value.
 
 ### Extended Algorithms
 
