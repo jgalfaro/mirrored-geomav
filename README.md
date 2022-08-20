@@ -25,8 +25,8 @@ algorithm with a decisional framework resolving conflicts resulting
 from errors made by place recognition methods. The errors divide the
 members of a swarm with respect to the location of waypoints. We
 propose four decisional algorithms to resolve conflicts among members
-of a swarm due to place recognition errors. The performance the
-performance of the decisional algorithms is modeled and analyzed.
+of a swarm due to place recognition errors. The performance 
+of the decisional algorithms is modeled and analyzed.
 
 ## Keywords
 
